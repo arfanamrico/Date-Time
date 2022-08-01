@@ -6,3 +6,21 @@ print(x.year)
 print(x.strftime('%B'))
 print(x.strftime("%A"))
 print(x.strftime(f'%A, %B %d, %Y')) 
+=====================================
+import datetime
+
+x = datetime.datetime.now()
+tgl = str(x.strftime(f'%A, %B %d, %Y'))
+print(tgl)
+
+=======================================
+import datetime
+tgl = '2022-09-08'
+tgl = tgl.split('-')
+y = int(tgl[0])
+m = int(tgl[1])
+d = int(tgl[2])
+print(y, m, d)
+x = datetime.datetime(y, m, d)
+
+print(x.strftime(f'%A, %B %d, %Y'))
