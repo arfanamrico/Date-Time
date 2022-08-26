@@ -1,0 +1,9 @@
+import datetime
+pukul = '09:00:00'
+tgl = '8/24/2022'
+jam, menit, detik = pukul.split(':')
+bulan, tanggal, tahun = tgl.split('/')
+date = datetime.date(int(tahun), int(bulan), int(tanggal))
+time = datetime.time(int(jam),int(menit),int(detik))
+print(date)
+print(time)
